@@ -1,0 +1,51 @@
+/* Skylark Run — page chrome: dark stage, centred canvas, small help line. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b1220;
+  color: #dbe7f5;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+#game {
+  width: min(1280px, 100%);
+  height: auto;
+  display: block;
+  background: #2b4a7a;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  outline: none;
+}
+
+#game:focus-visible {
+  box-shadow: 0 0 0 3px #8fc8ff, 0 12px 48px rgba(0, 0, 0, 0.55);
+}
+
+#help {
+  margin: 0;
+  font-size: 13px;
+  color: #8fa8c4;
+  text-align: center;
+}
+
+#error {
+  margin: 0;
+  padding: 8px 14px;
+  background: #5a1d18;
+  color: #ffd2cc;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 1280px;
+}
